@@ -25,7 +25,7 @@ def keep_alive():
 # 2. SETUP BOT TELEGRAM
 # ==========================================
 # MASUKKAN TOKEN BOT LO DI SINI
-TOKEN = '8989769099:AAGiebZZPT653ouKonXc6GK6WbUG2ChmLAE'
+TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
